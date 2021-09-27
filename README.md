@@ -1,2 +1,2 @@
 # AE1_Exam_Preparation
- AE1 Exam Preparation
+University AE1 Exam Preparation for QHO426 - Problem solving through programming
