@@ -23,3 +23,24 @@ store
 •	for each entry in sounds, the function should allocate all pokemon names in one column with pokemon
 sounds in the other column, so to preserve the correct name-sound combination
 •	ensure the file is closed if it’s not being closed automatically"""
+
+
+def pokes():
+    print("Here are the Pokemon!")
+    me_poke = ["Pikachu", "Muk", "Arbok", "Charmander", "Mewtoo", "Ratatata", "Muk"]
+    for pokemon in me_poke:
+        print(pokemon, end="***")
+    return me_poke
+
+
+# pokes()
+def sounds(p):
+    noises = {}
+    for p_noise in p:
+        noise = input(f"Please enter the noise for pokemon {p_noise}: ").split(",")
+        noises[p_noise] = noise
+    print(noises)
+    return noises
+
+
+sounds(['Pikacu', 'Abrakadabra'])
