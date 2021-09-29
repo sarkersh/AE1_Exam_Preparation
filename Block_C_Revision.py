@@ -25,6 +25,37 @@ separate_Ts
 •	draw the smaller T with yellow dash-dot line and square markers on the first subplot
 •	draw the larger T with green line on the other subplot
 •	display the full figure"""
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+import matplotlib.pyplot as plt
+
+def both_Ts():
+    # single subplot
+    plt.subplot(1,1,1)
+    x = 2,2,1,1,4,4,3,3
+    y = 2,6,6,7,7,6,6,2
+    plt.plot(x, y, 'r^-')
+
+    x = 1,1,5,5,10,10,14,14
+    y = 1,5,5,12,12,5,5,1
+    plt.plot(x, y, 'bD--')      
+    plt.show()
+
+# both_Ts()
+
+def separate_Ts():
+    # double subplots
+    plt.subplot(2,1,1)
+    x = 2,2,1,1,4,4,3,3
+    y = 2,6,6,7,7,6,6,2
+    plt.plot(x, y, 'ys-.')
+
+    plt.subplot(2,1,2)
+    x = 1,1,5,5,10,10,14,14
+    y = 1,5,5,12,12,5,5,1
+    plt.plot(x, y, 'g-')      
+    plt.show()
+
+# separate_Ts()
 
 
 
