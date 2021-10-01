@@ -19,21 +19,21 @@ def overlapped():
     plt.show()
 
 
-overlapped()
+# overlapped()
 
 
 def individual():
-    plt.subplot(3, 3, 1)
+    plt.subplot(1, 3, 1)
     x = 1, 1, 3, 3, 1
     y = 1, 3, 3, 1, 1
     plt.plot(x, y, 'mp:')
 
-    plt.subplot(3, 3, 2)
+    plt.subplot(1, 3, 2)
     x = 2, 2, 4, 4, 2
     y = 2, 4, 4, 2, 2
     plt.plot(x, y, 'c--h')
 
-    plt.subplot(3, 3, 3)
+    plt.subplot(1, 3, 3)
     x = 3, 3, 5, 5, 3
     y = 3, 5, 5, 3, 3
     plt.plot(x, y, 'y-.D')
@@ -64,11 +64,11 @@ def individual_using_info():
         y = list1[0][1]
         z = list1[0][2]
 
-        plt.plot(x, y, z)
-        plt.show()
+    plt.plot(x, y, z)
+    plt.show()
 
 
-individual_using_info()
+# individual_using_info()
 
 
 
