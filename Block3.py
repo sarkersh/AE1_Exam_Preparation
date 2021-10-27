@@ -37,6 +37,9 @@ def individual():
     x = 3, 3, 5, 5, 3
     y = 3, 5, 5, 3, 3
     plt.plot(x, y, 'y-.D')
+
+    plt.xticks([])
+    plt.yticks([])
     plt.show()
 
 
@@ -64,8 +67,8 @@ def individual_using_info():
         y = list1[0][1]
         z = list1[0][2]
 
-    plt.plot(x, y, z)
-    plt.show()
+        plt.plot(x, y, z)
+        plt.show()
 
 
 # individual_using_info()
